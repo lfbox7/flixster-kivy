@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01532DAA137C099F0076F6BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01532DA9137C099F0076F6BF /* icon.png */; };
+		163245DD868E528E8A7BE315 /* libkivy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA514131B7FBB7FC106D7E1F /* libkivy.a */; };
+		17D24ACC9B5150150BDAEDF3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A54AF3B911E126810E42C8 /* WebKit.framework */; };
+		1D484852AD73FBC9CD84E8B5 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC44877A98F6DB274EC7057 /* GameController.framework */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1E3048508C56D2661736C67F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85EC4C0A852977A0577C358F /* CoreMotion.framework */; };
+		1E6A4DDE934C241CDE0FEBFE /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 359D41E08B86B915E29EDDE4 /* libssl.a */; };
+		1ED44DE393007877EA10FF9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E4744BB25C9C5A15BA3DB /* UIKit.framework */; };
+		20654EAD9C5A4C6171D47DDB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73964BFAA15BEEEC3308AFA2 /* MessageUI.framework */; };
+		249C48CC9C10F457D58F50FD /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869C433E91420C2E94F141E8 /* Photos.framework */; };
+		2CB5F34717D5233A006187AB /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB5F34617D5233A006187AB /* bridge.m */; };
+		2E1D4970BBD2C944DD0D583F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE342C39C666DBE660D9A54 /* ImageIO.framework */; };
+		34B842B9BFEFAE7D890AA741 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B04E0399611EA599399603 /* AudioToolbox.framework */; };
+		39D74A7B975C2060953B0E42 /* libpython3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C741F98AE317771DB46241 /* libpython3.a */; };
+		3B654BFEA0366D0184C21D1A /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA334135A52A327D869D9D2B /* libffi.a */; };
+		3B6941C9940FF4011F2A9953 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F74A6B8E528DAA1E93D3F3 /* libbz2.tbd */; };
+		3DF34A91A34B89680D31040C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECC4311BC13358034A86CD9 /* libsqlite3.tbd */; };
+		4C264EA1918ED76B8ACDD85C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60C4496B2291CDC58C8BA69 /* MobileCoreServices.framework */; };
+		59738AB51A8BB5D8001B2C0C /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 59738AB41A8BB5D8001B2C0C /* lib */; };
+		59738ABB1A8E19AA001B2C0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59738ABA1A8E19AA001B2C0C /* Images.xcassets */; };
+		59738ADB1A8E62D6001B2C0C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59738AD01A8E62D6001B2C0C /* Default-568h@2x.png */; };
+		59738ADC1A8E62D6001B2C0C /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59738AD11A8E62D6001B2C0C /* Default-667h@2x.png */; };
+		59738ADD1A8E62D6001B2C0C /* Default-763h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59738AD21A8E62D6001B2C0C /* Default-763h@3x.png */; };
+		59738ADE1A8E62D6001B2C0C /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 59738AD31A8E62D6001B2C0C /* Default-Landscape.png */; };
+		59738ADF1A8E62D6001B2C0C /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59738AD41A8E62D6001B2C0C /* Default-Landscape@2x.png */; };
+		59738AE01A8E62D6001B2C0C /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 59738AD51A8E62D6001B2C0C /* Default-Portrait.png */; };
+		59738AE11A8E62D6001B2C0C /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 59738AD61A8E62D6001B2C0C /* Default-Portrait@2x~ipad.png */; };
+		59738AE21A8E62D6001B2C0C /* Default-Portrait@3x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 59738AD71A8E62D6001B2C0C /* Default-Portrait@3x~ipad.png */; };
+		59738AE31A8E62D6001B2C0C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59738AD81A8E62D6001B2C0C /* Default.png */; };
+		59738AE41A8E62D6001B2C0C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59738AD91A8E62D6001B2C0C /* Default@2x.png */; };
+		59738AE51A8E62D6001B2C0C /* Default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59738ADA1A8E62D6001B2C0C /* Default@3x.png */; };
+		59994E3B148E85C800863906 /* YourApp in Resources */ = {isa = PBXBuildFile; fileRef = 59994E3A148E85C800863906 /* YourApp */; };
+		59FDEA8B21E7D34E004E6ECE /* include in Resources */ = {isa = PBXBuildFile; fileRef = 59FDEA8A21E7D34E004E6ECE /* include */; };
+		63A64571A23BA076B3ED5A14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B477426FA8F007F83DFD0BAB /* CoreGraphics.framework */; };
+		69DF4B389EB2195ED5714647 /* libsdl2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D094CE89C92D60D40540B98 /* libsdl2_ttf.a */; };
+		6C9A4E65B9D57F7BBDBA5548 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D48454CB5BECCAFCB6C4CF7 /* Accelerate.framework */; };
+		744845D9944B01294E780D6F /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDEA474DBD959B44A511F039 /* Metal.framework */; };
+		844C499599A9CABF7A3A7D6A /* libsdl2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B724BA3BEEF786BFDCD1F67 /* libsdl2_mixer.a */; };
+		87B2473096FE83E7F039D7AD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4929460DA821CBC38E106915 /* libz.tbd */; };
+		90414E408B0598267F7A5D14 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 203D4524B35F94F4DD18FFBD /* libfreetype.a */; };
+		96C14570AEB932E144F5A474 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C84981A925DBEC4365C3D6 /* CoreMedia.framework */; };
+		A5144563B94E1238EF26177E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1C48FA85E61D860363B7E3 /* libcrypto.a */; };
+		ADC64868AB50BA16E0F2A293 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0A4A939B68412D9207237C /* AVFoundation.framework */; };
+		B1754E25A0383A4E4A41406A /* libpyobjus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 358C411391B7E49AA1C49087 /* libpyobjus.a */; };
+		B1A84EA1A8AF7CD2F1F13200 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CD42D58C5AF45D0E7281CF /* libc++.tbd */; };
+		C3EC4F10BA1608F55F0D9563 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DF4DFCB24166219D58052E /* CoreVideo.framework */; };
+		D88A458083497B061EBEF3C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E75479F82A436DF213BE118 /* QuartzCore.framework */; };
+		DB6E48C88771565630B68ED7 /* libsdl2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 002442BB9231304BFE714A0D /* libsdl2_image.a */; };
+		EDF14F629C889E5F06CEF36A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF341C8A81DEBF875B10E1F /* OpenGLES.framework */; };
+		F2C747D29C29B69ACCFC5486 /* libsdl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3D4F6281B3326A44BD20DE /* libsdl2.a */; };
+		F59F4A86BA94DD8F2128AC09 /* libios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B24BCE9EEC008B5B048EDA /* libios.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		002442BB9231304BFE714A0D /* libsdl2_image.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsdl2_image.a; path = ../dist/lib/libsdl2_image.a; sourceTree = SOURCE_ROOT; };
+		01532DA9137C099F0076F6BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		0B724BA3BEEF786BFDCD1F67 /* libsdl2_mixer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsdl2_mixer.a; path = ../dist/lib/libsdl2_mixer.a; sourceTree = SOURCE_ROOT; };
+		0D094CE89C92D60D40540B98 /* libsdl2_ttf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsdl2_ttf.a; path = ../dist/lib/libsdl2_ttf.a; sourceTree = SOURCE_ROOT; };
+		0ECC4311BC13358034A86CD9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib/libsqlite3.tbd; sourceTree = "<absolute>"; };
+		1D6058910D05DD3D006BFB54 /* boxl_a03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boxl_a03.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0A4A939B68412D9207237C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = "<absolute>"; };
+		203D4524B35F94F4DD18FFBD /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../dist/lib/libfreetype.a; sourceTree = SOURCE_ROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CB5F34517D5233A006187AB /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = SOURCE_ROOT; };
+		2CB5F34617D5233A006187AB /* bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = SOURCE_ROOT; };
+		2D48454CB5BECCAFCB6C4CF7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		34DF4DFCB24166219D58052E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		358C411391B7E49AA1C49087 /* libpyobjus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpyobjus.a; path = ../dist/lib/libpyobjus.a; sourceTree = SOURCE_ROOT; };
+		359D41E08B86B915E29EDDE4 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../dist/lib/libssl.a; sourceTree = SOURCE_ROOT; };
+		3BC44877A98F6DB274EC7057 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/GameController.framework; sourceTree = "<absolute>"; };
+		45B24BCE9EEC008B5B048EDA /* libios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libios.a; path = ../dist/lib/libios.a; sourceTree = SOURCE_ROOT; };
+		4929460DA821CBC38E106915 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib/libz.tbd; sourceTree = "<absolute>"; };
+		52B04E0399611EA599399603 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		53C741F98AE317771DB46241 /* libpython3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpython3.a; path = ../dist/lib/libpython3.a; sourceTree = SOURCE_ROOT; };
+		59738AB41A8BB5D8001B2C0C /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = /Users/lenny/dist/root/python3/lib; sourceTree = "<group>"; };
+		59738ABA1A8E19AA001B2C0C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = boxl_a03/Images.xcassets; sourceTree = "<group>"; };
+		59738AD01A8E62D6001B2C0C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "LaunchImages/Default-568h@2x.png"; sourceTree = "<group>"; };
+		59738AD11A8E62D6001B2C0C /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-667h@2x.png"; path = "LaunchImages/Default-667h@2x.png"; sourceTree = "<group>"; };
+		59738AD21A8E62D6001B2C0C /* Default-763h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-763h@3x.png"; path = "LaunchImages/Default-763h@3x.png"; sourceTree = "<group>"; };
+		59738AD31A8E62D6001B2C0C /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "LaunchImages/Default-Landscape.png"; sourceTree = "<group>"; };
+		59738AD41A8E62D6001B2C0C /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x.png"; path = "LaunchImages/Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		59738AD51A8E62D6001B2C0C /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait.png"; path = "LaunchImages/Default-Portrait.png"; sourceTree = "<group>"; };
+		59738AD61A8E62D6001B2C0C /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "LaunchImages/Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		59738AD71A8E62D6001B2C0C /* Default-Portrait@3x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@3x~ipad.png"; path = "LaunchImages/Default-Portrait@3x~ipad.png"; sourceTree = "<group>"; };
+		59738AD81A8E62D6001B2C0C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = LaunchImages/Default.png; sourceTree = "<group>"; };
+		59738AD91A8E62D6001B2C0C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "LaunchImages/Default@2x.png"; sourceTree = "<group>"; };
+		59738ADA1A8E62D6001B2C0C /* Default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@3x.png"; path = "LaunchImages/Default@3x.png"; sourceTree = "<group>"; };
+		59994E3A148E85C800863906 /* YourApp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = YourApp; sourceTree = "<group>"; };
+		59FDEA8A21E7D34E004E6ECE /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = /Users/lenny/dist/root/python3/include; sourceTree = "<group>"; };
+		6E75479F82A436DF213BE118 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		711E4744BB25C9C5A15BA3DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = "<absolute>"; };
+		73964BFAA15BEEEC3308AFA2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = "<absolute>"; };
+		7B1C48FA85E61D860363B7E3 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../dist/lib/libcrypto.a; sourceTree = SOURCE_ROOT; };
+		7EE342C39C666DBE660D9A54 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = "<absolute>"; };
+		80F74A6B8E528DAA1E93D3F3 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib/libbz2.tbd; sourceTree = "<absolute>"; };
+		85EC4C0A852977A0577C358F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = "<absolute>"; };
+		869C433E91420C2E94F141E8 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Photos.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* boxl_a03-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "boxl_a03-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9FF341C8A81DEBF875B10E1F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = "<absolute>"; };
+		B477426FA8F007F83DFD0BAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
+		B60C4496B2291CDC58C8BA69 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = "<absolute>"; };
+		C3C84981A925DBEC4365C3D6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = "<absolute>"; };
+		CA514131B7FBB7FC106D7E1F /* libkivy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkivy.a; path = ../dist/lib/libkivy.a; sourceTree = SOURCE_ROOT; };
+		D0A54AF3B911E126810E42C8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		DA334135A52A327D869D9D2B /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = ../dist/lib/libffi.a; sourceTree = SOURCE_ROOT; };
+		EC3D4F6281B3326A44BD20DE /* libsdl2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsdl2.a; path = ../dist/lib/libsdl2.a; sourceTree = SOURCE_ROOT; };
+		F5CD42D58C5AF45D0E7281CF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib/libc++.tbd"; sourceTree = "<absolute>"; };
+		FDEA474DBD959B44A511F039 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Metal.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C264EA1918ED76B8ACDD85C /* MobileCoreServices.framework in Frameworks */,
+				ADC64868AB50BA16E0F2A293 /* AVFoundation.framework in Frameworks */,
+				1D484852AD73FBC9CD84E8B5 /* GameController.framework in Frameworks */,
+				2E1D4970BBD2C944DD0D583F /* ImageIO.framework in Frameworks */,
+				249C48CC9C10F457D58F50FD /* Photos.framework in Frameworks */,
+				96C14570AEB932E144F5A474 /* CoreMedia.framework in Frameworks */,
+				C3EC4F10BA1608F55F0D9563 /* CoreVideo.framework in Frameworks */,
+				744845D9944B01294E780D6F /* Metal.framework in Frameworks */,
+				17D24ACC9B5150150BDAEDF3 /* WebKit.framework in Frameworks */,
+				34B842B9BFEFAE7D890AA741 /* AudioToolbox.framework in Frameworks */,
+				EDF14F629C889E5F06CEF36A /* OpenGLES.framework in Frameworks */,
+				6C9A4E65B9D57F7BBDBA5548 /* Accelerate.framework in Frameworks */,
+				1ED44DE393007877EA10FF9B /* UIKit.framework in Frameworks */,
+				D88A458083497B061EBEF3C7 /* QuartzCore.framework in Frameworks */,
+				63A64571A23BA076B3ED5A14 /* CoreGraphics.framework in Frameworks */,
+				1E3048508C56D2661736C67F /* CoreMotion.framework in Frameworks */,
+				20654EAD9C5A4C6171D47DDB /* MessageUI.framework in Frameworks */,
+				87B2473096FE83E7F039D7AD /* libz.tbd in Frameworks */,
+				3DF34A91A34B89680D31040C /* libsqlite3.tbd in Frameworks */,
+				B1A84EA1A8AF7CD2F1F13200 /* libc++.tbd in Frameworks */,
+				3B6941C9940FF4011F2A9953 /* libbz2.tbd in Frameworks */,
+				39D74A7B975C2060953B0E42 /* libpython3.a in Frameworks */,
+				B1754E25A0383A4E4A41406A /* libpyobjus.a in Frameworks */,
+				1E6A4DDE934C241CDE0FEBFE /* libssl.a in Frameworks */,
+				F59F4A86BA94DD8F2128AC09 /* libios.a in Frameworks */,
+				90414E408B0598267F7A5D14 /* libfreetype.a in Frameworks */,
+				A5144563B94E1238EF26177E /* libcrypto.a in Frameworks */,
+				F2C747D29C29B69ACCFC5486 /* libsdl2.a in Frameworks */,
+				DB6E48C88771565630B68ED7 /* libsdl2_image.a in Frameworks */,
+				3B654BFEA0366D0184C21D1A /* libffi.a in Frameworks */,
+				69DF4B389EB2195ED5714647 /* libsdl2_ttf.a in Frameworks */,
+				163245DD868E528E8A7BE315 /* libkivy.a in Frameworks */,
+				844C499599A9CABF7A3A7D6A /* libsdl2_mixer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2CB5F34517D5233A006187AB /* bridge.h */,
+				2CB5F34617D5233A006187AB /* bridge.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* boxl_a03.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				59994E3A148E85C800863906 /* YourApp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				59738ABA1A8E19AA001B2C0C /* Images.xcassets */,
+				59738AB41A8BB5D8001B2C0C /* lib */,
+				59FDEA8A21E7D34E004E6ECE /* include */,
+				01532DA9137C099F0076F6BF /* icon.png */,
+				8D1107310486CEB800E47090 /* boxl_a03-Info.plist */,
+				59738AD01A8E62D6001B2C0C /* Default-568h@2x.png */,
+				59738AD11A8E62D6001B2C0C /* Default-667h@2x.png */,
+				59738AD21A8E62D6001B2C0C /* Default-763h@3x.png */,
+				59738AD31A8E62D6001B2C0C /* Default-Landscape.png */,
+				59738AD41A8E62D6001B2C0C /* Default-Landscape@2x.png */,
+				59738AD51A8E62D6001B2C0C /* Default-Portrait.png */,
+				59738AD61A8E62D6001B2C0C /* Default-Portrait@2x~ipad.png */,
+				59738AD71A8E62D6001B2C0C /* Default-Portrait@3x~ipad.png */,
+				59738AD81A8E62D6001B2C0C /* Default.png */,
+				59738AD91A8E62D6001B2C0C /* Default@2x.png */,
+				59738ADA1A8E62D6001B2C0C /* Default@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B60C4496B2291CDC58C8BA69 /* MobileCoreServices.framework */,
+				1F0A4A939B68412D9207237C /* AVFoundation.framework */,
+				3BC44877A98F6DB274EC7057 /* GameController.framework */,
+				7EE342C39C666DBE660D9A54 /* ImageIO.framework */,
+				869C433E91420C2E94F141E8 /* Photos.framework */,
+				C3C84981A925DBEC4365C3D6 /* CoreMedia.framework */,
+				34DF4DFCB24166219D58052E /* CoreVideo.framework */,
+				FDEA474DBD959B44A511F039 /* Metal.framework */,
+				D0A54AF3B911E126810E42C8 /* WebKit.framework */,
+				52B04E0399611EA599399603 /* AudioToolbox.framework */,
+				9FF341C8A81DEBF875B10E1F /* OpenGLES.framework */,
+				2D48454CB5BECCAFCB6C4CF7 /* Accelerate.framework */,
+				711E4744BB25C9C5A15BA3DB /* UIKit.framework */,
+				6E75479F82A436DF213BE118 /* QuartzCore.framework */,
+				B477426FA8F007F83DFD0BAB /* CoreGraphics.framework */,
+				85EC4C0A852977A0577C358F /* CoreMotion.framework */,
+				73964BFAA15BEEEC3308AFA2 /* MessageUI.framework */,
+				4929460DA821CBC38E106915 /* libz.tbd */,
+				0ECC4311BC13358034A86CD9 /* libsqlite3.tbd */,
+				F5CD42D58C5AF45D0E7281CF /* libc++.tbd */,
+				80F74A6B8E528DAA1E93D3F3 /* libbz2.tbd */,
+				53C741F98AE317771DB46241 /* libpython3.a */,
+				358C411391B7E49AA1C49087 /* libpyobjus.a */,
+				359D41E08B86B915E29EDDE4 /* libssl.a */,
+				45B24BCE9EEC008B5B048EDA /* libios.a */,
+				203D4524B35F94F4DD18FFBD /* libfreetype.a */,
+				7B1C48FA85E61D860363B7E3 /* libcrypto.a */,
+				EC3D4F6281B3326A44BD20DE /* libsdl2.a */,
+				002442BB9231304BFE714A0D /* libsdl2_image.a */,
+				DA334135A52A327D869D9D2B /* libffi.a */,
+				0D094CE89C92D60D40540B98 /* libsdl2_ttf.a */,
+				CA514131B7FBB7FC106D7E1F /* libkivy.a */,
+				0B724BA3BEEF786BFDCD1F67 /* libsdl2_mixer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* boxl_a03 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "boxl_a03" */;
+			buildPhases = (
+				113D17E2153E3DB5001310A5 /* ShellScript */,
+				113D17E2153E3DB5001310A6 /* ShellScript */,
+				113D17E2153E3DB5001310A7 /* ShellScript */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = boxl_a03;
+			productName = boxl_a03;
+			productReference = 1D6058910D05DD3D006BFB54 /* boxl_a03.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = LG3N8TKY59;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "boxl_a03" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				fr,
+				Base,
+				de,
+				ja,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* boxl_a03 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59738AE41A8E62D6001B2C0C /* Default@2x.png in Resources */,
+				59738AB51A8BB5D8001B2C0C /* lib in Resources */,
+				59FDEA8B21E7D34E004E6ECE /* include in Resources */,
+				59738ABB1A8E19AA001B2C0C /* Images.xcassets in Resources */,
+				59738ADE1A8E62D6001B2C0C /* Default-Landscape.png in Resources */,
+				59738AE31A8E62D6001B2C0C /* Default.png in Resources */,
+				01532DAA137C099F0076F6BF /* icon.png in Resources */,
+				59994E3B148E85C800863906 /* YourApp in Resources */,
+				59738AE11A8E62D6001B2C0C /* Default-Portrait@2x~ipad.png in Resources */,
+				59738AE01A8E62D6001B2C0C /* Default-Portrait.png in Resources */,
+				59738ADC1A8E62D6001B2C0C /* Default-667h@2x.png in Resources */,
+				59738ADB1A8E62D6001B2C0C /* Default-568h@2x.png in Resources */,
+				59738ADD1A8E62D6001B2C0C /* Default-763h@3x.png in Resources */,
+				59738AE21A8E62D6001B2C0C /* Default-Portrait@3x~ipad.png in Resources */,
+				59738AE51A8E62D6001B2C0C /* Default@3x.png in Resources */,
+				59738ADF1A8E62D6001B2C0C /* Default-Landscape@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		113D17E2153E3DB5001310A5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "rsync -av --delete \"/Users/lenny/Desktop/CSCI 4359/BoxL_A03\"/ \"$PROJECT_DIR\"/YourApp";
+		};
+		113D17E2153E3DB5001310A6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "/Users/lenny/dist/hostpython3/bin/python -m compileall -f -b \"$PROJECT_DIR\"/YourApp";
+		};
+		113D17E2153E3DB5001310A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "find \"$PROJECT_DIR\"/YourApp/ -regex '.*\\.py' -delete";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				2CB5F34717D5233A006187AB /* bridge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = LG3N8TKY59;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/lenny/dist/frameworks,
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/lenny/dist/root/python3/include/python3.8/**",
+					/Users/lenny/dist/include/common/sdl2,
+				);
+				INFOPLIST_FILE = "boxl_a03-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lenny/dist/lib,
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib,
+					"$(SRCROOT)/../dist/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.burntbootcreek;
+				PRODUCT_NAME = boxl_a03;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = LG3N8TKY59;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/lenny/dist/frameworks,
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/lenny/dist/root/python3/include/python3.8/**",
+					/Users/lenny/dist/include/common/sdl2,
+				);
+				INFOPLIST_FILE = "boxl_a03-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lenny/dist/lib,
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib,
+					"$(SRCROOT)/../dist/lib",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.burntbootcreek;
+				PRODUCT_NAME = boxl_a03;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				USER_HEADER_SEARCH_PATHS = /Users/lenny/dist/root/include/;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				USER_HEADER_SEARCH_PATHS = /Users/lenny/dist/root/include/;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "boxl_a03" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "boxl_a03" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

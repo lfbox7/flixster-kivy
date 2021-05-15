@@ -1,0 +1,69 @@
+<SelectableLabel>:
+    canvas.before:
+        Color:
+            rgba: (0, 0, 0, 1)
+            #rgba: (189, 195, 199, 1) if self.selected else (0, 0, 0, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    label1_source: " "
+    label2_text: " "
+    label3_text: " "
+
+    pos: self.pos
+    height: self.minimum_height
+    padding: 20, 20
+
+    AsyncImage:
+        source: root.label1_source
+        allow_stretch: True
+        keep_ratio: True
+        size_hint_y: None
+        size_hint_x: 0.2
+        height: dp(150)
+        padding: 20, 20
+
+    GridLayout:
+        cols: 1
+        rows: 2
+        size_hint_x: 0.8
+
+        Label:
+            text: root.label2_text
+            bold: True
+            size: self.texture_size
+            font_size: '24dp'
+            text_size: root.width, None
+            halign: 'center'
+            valign: 'top'
+            #canvas.before:
+                #Color:
+                    #rgb: 0, 0, 0
+                #Rectangle:
+                    #pos: self.pos
+                    #size: self.size
+
+        Label:
+            text: root.label3_text
+            text_size: self.width, None
+            height: self.texture_size[1]
+            halign: 'left'
+            valign: 'middle'
+            #canvas.before:
+                #Color:
+                    #rgb: 0, 0, 0
+                #Rectangle:
+                    #pos: self.pos
+                    #size: self.size
+
+<MovieCell>:
+    viewclass: 'SelectableLabel'
+    SelectableRecycleBoxLayout:
+        default_size: None, dp(160)
+        default_size_hint: 1, None
+        size_hint_y: None
+        height: self.minimum_height
+        orientation: 'vertical'
+        multiselect: False
+        touch_multiselect: False

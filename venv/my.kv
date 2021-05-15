@@ -1,0 +1,85 @@
+# my.kv
+# version: 1.0
+
+# SelectableLabel is nested within the SelectableRecycleBoxLayout
+# MovieCell is the child of SelectableLabel
+
+# commented out Color sections are a failed attempt to change font color at 'cell' selection
+# will continue to find a way to option this
+
+<SelectableLabel>:
+    # sets colors for background of labels ('cells')
+    canvas.before:
+        Color:
+            rgba: (0, 0, 0, 1)
+            #rgba: (189, 195, 199, 1) if self.selected else (0, 0, 0, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    # intializing python variables in .kv
+    label1_source: " "
+    label2_text: " "
+    label3_text: " "
+
+    pos: self.pos
+    height: self.minimum_height
+    padding: 20, 20
+
+    # AsyncImage to depict movie poster set at 20% width of screen
+    AsyncImage:
+        source: root.label1_source
+        allow_stretch: True
+        keep_ratio: True
+        size_hint_y: None
+        size_hint_x: 0.2
+        height: dp(150)
+        padding: 20, 20
+
+    # sub gridlayout to hold title and description labels, set at 80% of screen
+    GridLayout:
+        cols: 1
+        rows: 2
+        size_hint_x: 0.8
+
+        # title label, top row of inner gridlayout
+        Label:
+            text: root.label2_text
+            bold: True
+            size: self.texture_size
+            font_size: '24dp'
+            text_size: root.width, None
+            halign: 'center'
+            valign: 'top'
+            #canvas.before:
+                #Color:
+                    #rgb: 0, 0, 0
+                #Rectangle:
+                    #pos: self.pos
+                    #size: self.size
+
+        # descripiton label, bottom row of inner gridlayout
+        Label:
+            text: root.label3_text
+            text_size: self.width, None
+            height: self.texture_size[1]
+            halign: 'left'
+            valign: 'middle'
+            #canvas.before:
+                #Color:
+                    #rgb: 0, 0, 0
+                #Rectangle:
+                    #pos: self.pos
+                    #size: self.size
+
+# MovieCell feeds SelectableLabel which in turn feeds SelectableRecycleBoxLayout
+<MovieCell>:
+    viewclass: 'SelectableLabel'
+    SelectableRecycleBoxLayout:
+        default_size: None, dp(180)
+        default_size_hint: 1, None
+        size_hint_y: None
+        height: self.minimum_height
+        orientation: 'vertical'
+        multiselect: False
+        touch_multiselect: False
